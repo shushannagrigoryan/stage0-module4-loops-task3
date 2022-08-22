@@ -2,6 +2,7 @@ package school.mjc.stage0.loops.task3;
 
 public class DigitsSum {
     public void printDigitsSum(int t){
+        System.out.println("t = "+ t);
         String str = "";
         String str1 = t + str;
         int sum = 0;

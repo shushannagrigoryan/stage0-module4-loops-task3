@@ -2,6 +2,8 @@ package school.mjc.stage0.loops.task3;
 
 public class GreatestCommonDivisor {
     public void printGCD(int first, int second){
+        System.out.println("first= " + first);
+        System.out.println("second= " + second);
         int min = Math.min(first, second);
         int max_div = 1;
 
