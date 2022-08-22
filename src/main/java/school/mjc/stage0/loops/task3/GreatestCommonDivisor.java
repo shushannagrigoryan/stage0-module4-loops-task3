@@ -2,17 +2,21 @@ package school.mjc.stage0.loops.task3;
 
 public class GreatestCommonDivisor {
     public void printGCD(int first, int second){
-        System.out.println("first= " + first);
-        System.out.println("second= " + second);
         int min = Math.min(first, second);
         int max_div = 1;
 
-        for(int i = 2; i<=min;i++){
-            if(first%i == 0 && second%i ==0){
-                max_div = i;
+        if(min == 0){
+            System.out.println(Math.max(first, second));
+        }
+        else{
+            for(int i = 2; i<=min;i++){
+                if(first%i == 0 && second%i ==0){
+                    max_div = i;
+                }
             }
+
+            System.out.println(max_div);
         }
 
-        System.out.println(max_div);
     }
 }
